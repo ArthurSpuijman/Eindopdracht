@@ -1,0 +1,303 @@
+body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow-x:hidden;
+} 
+
+/* navigatie balk */
+body > header {
+    display: flex;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    height: 8em;
+}
+
+nav > ul > li:nth-of-type(1) > a > img {
+    width: 10em;
+    margin-top: 1em;
+}
+
+nav > ul > li:nth-of-type(2) > a > img {
+    width: 2em;
+    margin-left: 1em;
+    margin-top: 1.5em;
+}
+
+nav {
+    width: 100%;
+}
+
+nav > ul > li:nth-of-type(3) > a > img {
+    width: 2.1em;
+    margin-left: 1em;
+    margin-top: 1.5em;
+}
+
+nav > ul > li:nth-of-type(4) > a > img {
+    width: 2.2em;
+    margin-left: 1em;
+    margin-top: 1.5em;
+    margin-right: 2em;
+}
+
+header > nav > ul {
+    display: flex;
+}
+
+
+header > nav {
+    background-color: rgb(6, 24, 61);
+    height: 7em;
+}
+
+nav > ul > li:first-of-type {
+    margin-right: auto;
+}
+
+header > nav > ul > li {
+    list-style: none;
+}
+
+/* eerste sectie 99 verhalen */
+section > h1 {
+    background-color: rgb(6, 24, 61, 0.7);
+    color: white;
+    padding: 1em;
+    margin: 1em;
+    margin-top: 4.65em;
+    width: 100%;
+    margin-left: -1em;
+    margin-bottom: 4em;
+    font-family: Arial;
+}
+
+body > section:nth-of-type(1) {
+    background-image: url(../images/amsterdam.jpg);
+    width: 100%;
+    min-height: 20em;
+    background-size: cover;
+    margin-bottom: -1.6em;
+    margin-top: 0;
+}
+
+body > section:nth-of-type(1) > a {
+    border: 1em;
+    background-color: rgb(255, 220, 17);
+    border-radius: 0.3em;
+    color: black;
+    padding: 1em;
+    text-decoration: none;
+    font-family: Helvetica Neue;
+    border-bottom-style: solid;
+    border-bottom-color: #BC9E0A;
+    border-bottom-width: 0.2em;
+    position: relative;
+    top: 0em;
+}
+
+body > section:nth-of-type(1) > a:hover {
+    cursor: pointer;
+    border-bottom-width: 0.1em;
+    top: 0.1em;
+    background-color: rgb(260, 200, 17); 
+    
+}
+
+body > section:nth-of-type(1) > a:active {
+    cursor: pointer;
+    border-bottom-width: 0em;
+    top: 0.2em;
+}
+
+/* zorgt ervoor dat de anchor link transitie smooth verloopt*/
+html {
+    scroll-behavior:smooth;
+}
+
+/* filteren */
+section > ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+    border-color: #FFFFFF;
+    list-style: none;
+    background-color: rgb(108, 194, 209);
+    font-family: Arial;
+    min-width: 20em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:1.6em;
+}
+
+section > ul > li > a {
+    list-style: none;
+    text-decoration: none;
+    padding: 1em 0 0 1em 0;
+    color: white;
+}
+
+section > ul > li > a:hover{
+    color:rgb(6, 24, 61, 0.7);
+}
+
+/* zoek onderdeel */
+input[type=search] {
+    border-radius: 0.5em;
+    box-shadow: inset 0em 0em 0em 0em;
+    width: 25em;
+    border-style: solid;
+    border-color: rgb(108, 194, 209);
+    height: 2.5em;
+    padding-left: 2em;
+    margin-top: 1.5em;
+    background-color: #fff;
+    font-family: Arial, FontAwesome;
+}
+
+input[type=search]:focus{
+    outline: none;
+    border-color: rgb(6, 24, 61); 
+}
+
+/* artikelen, main sectie */
+article > p {
+    background-color: white;
+    color: black;
+    position: relative;
+    background-color: #FFFFFF;
+    margin-top: 2em;
+    float: left;
+    margin-left: 1.5em;
+    text-align: left;    
+    font-family: Arial;
+    margin-right: 1.5em;
+}
+
+article:hover{
+    transform: scale(1.05);
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+h3 {
+    background-color: white;
+    color: black;
+    margin-top: 0;
+    margin-bottom: -1.5em;
+    margin-left: 1.1em;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    float: left;
+    font-family: Arial;
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+article > img {
+    max-height: 16em;
+    width: 100%;
+    border-radius: 1em 1em 0em 0em;
+    margin-top: -20em;
+    object-fit: cover;
+}
+
+main > h2 {
+    font-family: Arial;
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+main > section {
+    width: 100%;
+    max-width: 60em;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0.2em;
+}
+
+article {
+    margin-left: 1em;
+    margin-right: 1em;
+    padding: 0em;
+    margin-bottom: 2em;
+    border-radius: 1em;
+    box-shadow: 0em 0em 0.5em lightgrey;
+    background-size: cover;
+    padding-top: 15em;
+    height: 13em;
+    background-size: 100% 15em;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+a:nth-of-type(1) article{
+    background-image: url(../images/alzheimer.jpeg);
+}
+
+a:nth-of-type(2) article{
+    background-image: url(../images/telegrafisch.jpg);
+}
+
+a:nth-of-type(3) article{
+    background-image: url(../images/Lepra_YorickdeWit.jpg);
+}
+
+a:nth-of-type(4) article{
+    background-image: url(../images/Nichterig_Desktop_Luuk_Arts.png);
+}
+
+a:nth-of-type(5) article{
+    background-image: url(../images/Onomatopee%20jasper%20koenen.jpg);
+}
+
+a:nth-of-type(6) article{
+    background-image: url(../images/rcsuka-doof-verhaal-v1.jpg);
+}
+
+a:nth-of-type(7) article{
+    background-image: url(../images/rosakoopman-ericlucassen.jpg);
+}
+
+a:nth-of-type(8) article{
+    background-image: url(../images/STIJLOEFENINGEN_22.jpg);
+}
+
+a:nth-of-type(9) article{
+    background-image: url(../images/Verhaal_Marilyn_Doornoink.jpg);
+}
+
+main > img {
+    width: 100%;
+}
+
+main {
+    overflow-y: hidden;
+}
+
+/*mediaqueries*/
+@media screen and (max-width: 60em) {
+    main > section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0.2em;
+    }
+}
+
+@media screen and (max-width: 37.5em) {
+    main > section {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 0.2em;
+    }
+}
